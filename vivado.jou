@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Fri May 12 10:07:09 2023
+# Process ID: 16052
+# Current directory: C:/Users/Rafael/Documents/processador_mips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20092 C:\Users\Rafael\Documents\processador_mips\processador_mips.xpr
+# Log file: C:/Users/Rafael/Documents/processador_mips/vivado.log
+# Journal file: C:/Users/Rafael/Documents/processador_mips\vivado.jou
+# Running On: DESKTOP-CMCHHDU, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 8, Host memory: 17109 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Rafael/Documents/processador_mips/processador_mips.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Rafael/Documents/processador_mips/componentes/mux2.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/componentes/mux2.vhd
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Rafael/Documents/processador_mips/processador_mips.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Rafael/Documents/processador_mips/componentes/shiftleft2.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/componentes/shiftleft2.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Rafael/Documents/processador_mips/componentes/alu_ctrl.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/componentes/alu_ctrl.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Rafael/Documents/processador_mips/componentes/alu.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/componentes/alu.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property top MIPS [current_fileset]
+close_project
+open_project C:/Users/Rafael/Documents/processador_mips/processador_mips.xpr
+file mkdir C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/MIPS.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/MIPS.vhd
+file mkdir C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sim_1/new
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extend.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extend.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extend.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extend.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extender.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/sign_extender.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/RegisterFile.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/RegisterFile.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/RegisterFile.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/RegisterFile.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/register_file.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/register_file.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux3.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux3.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/processador_mips/componentes/mux2.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/processador_mips/componentes/mux2.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux4.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux4.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/mux.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/mux.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux2.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/mux2.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/shift_left_2.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/shift_left_2.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/processador_mips/componentes/shiftleft2.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/processador_mips/componentes/shiftleft2.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/alu_control.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/alu_control.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Rafael/Documents/processador_mips/componentes/alu_ctrl.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Rafael/Documents/processador_mips/componentes/alu_ctrl.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/control_unit.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/control_unit.vhd
+close [ open C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/instruction_register.vhd w ]
+add_files C:/Users/Rafael/Documents/processador_mips/processador_mips.srcs/sources_1/new/instruction_register.vhd

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Fri May 12 20:06:21 2023
+# Process ID: 2488
+# Current directory: C:/Users/Rafael/Documents/processador_mips/processador_mips.runs/synth_1
+# Command line: vivado.exe -log mux4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux4.tcl
+# Log file: C:/Users/Rafael/Documents/processador_mips/processador_mips.runs/synth_1/mux4.vds
+# Journal file: C:/Users/Rafael/Documents/processador_mips/processador_mips.runs/synth_1\vivado.jou
+# Running On: DESKTOP-CMCHHDU, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 8, Host memory: 17109 MB
+#-----------------------------------------------------------
+source mux4.tcl -notrace
